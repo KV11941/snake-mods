@@ -240,18 +240,6 @@ function defaultPattern(frameNum) {
     colourArray[i] = randColour;
   }
   return colourArray;
-}
-
-function seizure(frameNum) {
-  let colourArray = [];
-  let randr = Math.floor(256*Math.random());
-  let randg = Math.floor(256*Math.random());
-  let randb = Math.floor(256*Math.random());
-  let randColour = rgbToHex(randr,randg,randb);
-  for(let i = 0; i<10; i++) {
-    colourArray[i] = randColour;
-  }
-  return colourArray;
 } 
 
 function temporalRainbow(frameNum) {
@@ -265,6 +253,18 @@ function temporalRainbow(frameNum) {
   }
   return colourArray;
 }
+
+function seizure(frameNum) {
+  let colourArray = [];
+  let randr = Math.floor(256*Math.random());
+  let randg = Math.floor(256*Math.random());
+  let randb = Math.floor(256*Math.random());
+  let randColour = rgbToHex(randr,randg,randb);
+  for(let i = 0; i<10; i++) {
+    colourArray[i] = randColour;
+  }
+  return colourArray;
+} 
 
 function rollingRainbow(frameNum) {
   let colourArray = [];  
